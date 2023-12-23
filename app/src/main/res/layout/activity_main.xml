@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_img"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/ic_photo"
+        android:layout_width="116dp"
+        android:layout_height="116dp"
+        android:src="@drawable/ic_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="186dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_below="@id/ic_photo"
+        android:layout_marginTop="30dp"
+
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:paddingHorizontal="20dp"
+            android:hint="Name"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/shape_edit_text_primary"/>
+        <EditText
+            android:id="@+id/palindrome"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="20dp"
+            android:hint="Palindrome"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/shape_edit_text_primary"/>
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shape_button_primary"
+            android:text="CHECK"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="center"
+            />
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_button_primary"
+            android:text="NEXT"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
